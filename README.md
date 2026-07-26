@@ -7,6 +7,7 @@ Transform your standard, plain markdown into beautifully styled and fully custom
 ## Features
 
 - **Massive Color Library:** Comes with a huge variety of pre-configured color themes. Just pass a color string and watch your markdown pop.
+- **Built-in Syntax Highlighting:** Markdown code blocks (` ``` `) automatically get VS Code-style syntax highlighting (using `oneDark` theme) out of the box!
 - **Own the Code:** No NPM black-box. Copy the files directly into your project and customize the core logic to your exact needs.
 - **Total Customization:** Override specific HTML tags (e.g., `p`, `h1`, `strong`) on the fly with your own utility classes (like Tailwind CSS).
 - **Bring Your Own Components:** Pass custom React components seamlessly alongside the pre-built themes.
@@ -50,7 +51,7 @@ This is a **colorful** markdown text!
 export default function App() {
   return (
     <div className="p-10">
-      <ColorfulMarkdown color="emerald" content="{markdownContent}" />
+      <ColorfulMarkdown color="emerald" content={markdownContent} />
     </div>
   );
 }
