@@ -60,5 +60,5 @@ export const themeMap = {
     "zinc": zincTheme,
     "neutral": neutralTheme,
     "stone": stoneTheme,
-    "default": slateTheme
+    "default": blueTheme
 };
