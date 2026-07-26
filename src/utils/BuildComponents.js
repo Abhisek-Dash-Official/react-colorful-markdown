@@ -19,7 +19,7 @@ export function generateComponents(theme) {
 
         if (!inline && match) {
             return (
-                <SyntaxHighlighter PreTag="div" className="rounded-lg my-4 shadow-sm text-sm" language="{match[1]}" style="{oneDark}" {...props}>
+                <SyntaxHighlighter PreTag="div" className="rounded-lg my-4 shadow-sm text-sm" language={match[1]} style={oneDark} {...props}>
                     {String(children).replace(/\n$/, "")}
                 </SyntaxHighlighter>
             );
